@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Dancing_Script } from 'next/font/google'
 import { Great_Vibes } from "next/font/google";
-import { UserButton, SignedIn, SignedOut, SignInButton } from '@clerk/nextjs';
+import {  SignedIn, SignedOut, SignInButton } from '@clerk/nextjs';
 import { Button } from './ui/button';
 import { FolderOpen, PenBox } from 'lucide-react';
 import UserMenu from "../components/user-menu"

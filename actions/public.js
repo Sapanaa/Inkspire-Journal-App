@@ -24,6 +24,7 @@ export const getDailyPrompt = unstable_cache(
       const data = await res.json();
       return data.slip.advice;
     } catch (error) {
+      console.error("Advice Slip API Error:", error);
       return {
         success: false,
         data: "What's on your mind today?",

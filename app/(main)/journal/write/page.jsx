@@ -25,13 +25,12 @@ import {
   saveDraft,
 } from "@/actions/journal";
 import { createCollection, getCollections } from "@/actions/collection";
-
+import { getMoodById, MOODS } from "../../../lib/mood";
 import { BarLoader } from "react-spinners";
 import { toast } from "sonner";
-import { journalSchema } from "@/lib/schema";
+import { journalSchema } from "@/app/lib/schemas";
 import "react-quill-new/dist/quill.snow.css";
 import CollectionForm from "@/components/collection-form";
-import { MOODS , getMoodById} from "../../../lib/mood";
 
 const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
 
@@ -61,6 +60,8 @@ export default function JournalEntryPage() {
     fn: fetchDraft,
   } = useFetch(getDraft);
 
+
+  
   const { loading: savingDraft, fn: saveDraftFn } = useFetch(saveDraft);
 
   const {
@@ -132,6 +133,7 @@ export default function JournalEntryPage() {
     }
   }, [draftData, isEditMode, existingEntry]);
 
+  
   // Handle collection creation success
   useEffect(() => {
     if (createdCollection) {

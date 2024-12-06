@@ -6,10 +6,7 @@ import { Book, Sparkles, Lock } from "lucide-react";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+  
 } from "@/components/ui/card"
 import  TestimonialCarousel  from "@/components/testimonialCarousel";
 import Faqs from "@/components/faq";
