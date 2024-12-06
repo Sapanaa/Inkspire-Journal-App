@@ -17,11 +17,11 @@ const TestimonialCarousel = () => {
     <div>
       <h2 className='text-center p-5 font-extrabold text-5xl text-orange-800 m-6'> What our Writer says</h2>
       <Carousel
-    /*  plugins={[
+      plugins={[
         Autoplay({
           delay: 2000,
         }),
-      ]}*/
+      ]}
     >
          <CarouselContent>
             {testimonials.map((testimonials, index) => {
