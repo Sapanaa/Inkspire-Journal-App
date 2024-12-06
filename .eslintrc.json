@@ -1,6 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
-  "rules": {
-    "no-unused-vars":  ["warn", { "argsIgnorePattern": "^_" }]
+  "rules" : {
+    "react-hooks/exhaustive-deps": "off", // Disable exhaustive deps rule
+    "react/jsx-props-no-spreading": "off" // Allow prop spreading
   }
 }

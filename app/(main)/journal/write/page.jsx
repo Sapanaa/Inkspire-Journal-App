@@ -28,7 +28,7 @@ import { createCollection, getCollections } from "@/actions/collection";
 import { getMoodById, MOODS } from "../../../lib/mood";
 import { BarLoader } from "react-spinners";
 import { toast } from "sonner";
-import { journalSchema } from "@/app/lib/schemas";
+import { journalSchema } from "@/lib/schema";
 import "react-quill-new/dist/quill.snow.css";
 import CollectionForm from "@/components/collection-form";
 
