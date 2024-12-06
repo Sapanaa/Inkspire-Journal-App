@@ -90,3 +90,25 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.ql-container {
+  min-height: 80vh;
+  height: 100%;
+  display: flex;
+  flex:  1;
+  flex-direction: column;
+}
+.ql-editor {
+  height: 100%;
+  flex:  1;
+  overflow-y: auto;
+  width: 100%;
+
+}
+.ql-toolbar {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+}
